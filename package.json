@@ -14,6 +14,9 @@
     "url": "https://github.com/YappyBots/YappyGitHub",
     "type": "git"
   },
+  "engines": { 
+    "node" : "12" 
+  },
   "author": "David Sevilla Martin <dsevilla192@icloud.com>",
   "license": "MIT",
   "dependencies": {
