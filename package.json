@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "private": true,
   "scripts": {
-    "start": "node lib/index.js",
+    "start": "npm i && npm run db:migrate && node lib/index.js",
     "lint": "prettier --write lib db",
     "db:migrate": "knex migrate:latest",
     "db:rollback": "knex migrate:rollback"
