@@ -12,7 +12,7 @@
   "repository": "https://github.com/ParadsieBotList/the-actual-list",
   "logo": "",
   "success_url": "/welcome",
-  "env": {}
+  "env": {},
   "buildpacks": [
     {
       "url": "heroku/nodejs"
