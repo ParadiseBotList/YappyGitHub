@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "private": true,
   "scripts": {
-    "start": "npm i && npm run db:migrate && node lib/index.js",
+    "start": "node lib/index.js",
     "lint": "prettier --write lib db",
     "db:migrate": "knex migrate:latest",
     "db:rollback": "knex migrate:rollback"
@@ -20,7 +20,7 @@
   "author": "David Sevilla Martin <dsevilla192@icloud.com>",
   "license": "MIT",
   "dependencies": {
-    "@YappyBots/addons": "github:YappyBots/yappy-addons#34404f851e5114ce79c3a37293822bd4ed48a296",
+    "@YappyBots/addons": "https://github.com/YappyBots/yappy-addons",
     "@octokit/rest": "^18.0.0",
     "@sentry/node": "^5.19.1",
     "body-parser": "^1.19.0",
