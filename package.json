@@ -11,7 +11,7 @@
     "db:rollback": "knex migrate:rollback"
   },
   "repository": {
-    "url": "https://github.com/YappyBots/YappyGitHub",
+    "url": "https://github.com/ParadiseBotList/YappyGitHub",
     "type": "git"
   },
   "engines": { 
