@@ -14,6 +14,7 @@ dependencies:
   git-rev-sync: 2.0.0
   got: 11.5.2
   hbs: 4.1.1
+  html: 1.0.0
   jsondiffpatch: 0.4.1
   knex: 0.21.5
   marked: 1.1.1
@@ -621,6 +622,10 @@ packages:
       node: '>=0.6.19'
     resolution:
       integrity: sha512-kDuEzldR21lHciPQAIulLs1LZlCXdLziXI6Mb/TDkwXhb//UORJNPXgcRs2CuO4H0DcMkpfT3/ySsP3unoZjBg==
+  /buffer-from/1.1.1:
+    dev: false
+    resolution:
+      integrity: sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
   /bugsnag/2.4.3:
     dependencies:
       backo: 1.1.0
@@ -825,6 +830,17 @@ packages:
     dev: false
     resolution:
       integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+  /concat-stream/1.6.2:
+    dependencies:
+      buffer-from: 1.1.1
+      inherits: 2.0.4
+      readable-stream: 2.3.7
+      typedarray: 0.0.6
+    dev: false
+    engines:
+      '0': node >= 0.8
+    resolution:
+      integrity: sha512-27HBghJxjiZtIk3Ycvn/4kbJk/1uZuJFfuPEns6LaEvpvG1f0hTea8lilrouyo9mVc2GWdcEZ8OLoGmSADlrCw==
   /console-control-strings/1.1.0:
     dev: false
     resolution:
@@ -1733,6 +1749,13 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-D5JbOMBIR/TVZkubHT+OyT2705QvogUW4IBn6nHd756OwieSF9aDYFj4dv6HHEVGYbHaLETa3WggZYWWMyy3ZQ==
+  /html/1.0.0:
+    dependencies:
+      concat-stream: 1.6.2
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha1-pUT6nqVJK/s6LMqCEKEL57WvH2E=
   /htmlparser2/3.10.1:
     dependencies:
       domelementtype: 1.3.1
@@ -3726,6 +3749,10 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==
+  /typedarray/0.0.6:
+    dev: false
+    resolution:
+      integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
   /uc.micro/1.0.6:
     dev: true
     resolution:
@@ -4002,13 +4029,14 @@ packages:
       got: ^10
       hbs: ^4
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/YappyBots/yappy-addons/tar.gz/34404f851e5114ce79c3a37293822bd4ed48a296'
     version: 0.2.0-dev
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  '@YappyBots/addons': 'git+https://github.com/YappyBots/yappy-addons.git'
+  '@YappyBots/addons': 'github:YappyBots/yappy-addons#34404f851e5114ce79c3a37293822bd4ed48a296'
   '@octokit/rest': ^18.0.0
   '@sentry/node': ^5.19.1
   body-parser: ^1.19.0
@@ -4023,6 +4051,7 @@ specifiers:
   git-rev-sync: ^2.0.0
   got: ^11.5.0
   hbs: ^4.1.1
+  html: ^1.0.0
   jsdoc: ^3.6.4
   jsdoc-strip-async-await: ^0.1.0
   jsondiffpatch: ^0.4.1

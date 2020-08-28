@@ -5,22 +5,22 @@
   "main": "lib/index.js",
   "private": true,
   "scripts": {
-    "start": "node lib/index.js",
+    "start": "npm run db:migrate && node lib/index.js",
     "lint": "prettier --write lib db",
     "db:migrate": "knex migrate:latest",
     "db:rollback": "knex migrate:rollback"
+  },
+  "engines": {
+    "node": "12"
   },
   "repository": {
     "url": "https://github.com/YappyBots/YappyGitHub",
     "type": "git"
   },
-  "engines": { 
-    "node" : "12" 
-  },
   "author": "David Sevilla Martin <dsevilla192@icloud.com>",
   "license": "MIT",
   "dependencies": {
-    "@YappyBots/addons": "https://github.com/YappyBots/yappy-addons",
+    "@YappyBots/addons": "github:YappyBots/yappy-addons#34404f851e5114ce79c3a37293822bd4ed48a296",
     "@octokit/rest": "^18.0.0",
     "@sentry/node": "^5.19.1",
     "body-parser": "^1.19.0",
@@ -47,7 +47,8 @@
     "sqlite3": "^5.0.0",
     "swag": "^0.7.0",
     "turndown": "^6.0.0",
-    "winston": "^3.3.3"
+    "winston": "^3.3.3",
+    "html": "^1.0.0"
   },
   "devDependencies": {
     "jsdoc": "^3.6.4",
